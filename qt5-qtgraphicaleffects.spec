@@ -20,6 +20,8 @@ Group:		Development/KDE and Qt
 License:	LGPLv2 with exceptions or GPLv3 with exceptions and GFDL
 URL:		http://www.qt.io
 BuildRequires:	qmake5 >= %{version}
+BuildRequires:	qt5-qtquick-private-devel >= %{version}
+BuildRequires:	qt5-qtqml-private-devel >= %{version}
 BuildRequires:	pkgconfig(Qt5Core) >= %{version}
 BuildRequires:	pkgconfig(Qt5Gui) >= %{version}
 BuildRequires:	pkgconfig(Qt5Qml) >= %{version}
