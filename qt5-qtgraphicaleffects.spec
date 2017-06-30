@@ -5,7 +5,7 @@
 %define debug_package %nil
 
 Name:		qt5-qtgraphicaleffects
-Version:	5.9.0
+Version:	5.9.1
 %if "%{beta}" != ""
 Release:	0.%{beta}.1
 %define qttarballdir qtgraphicaleffects-opensource-src-%{version}-%{beta}
