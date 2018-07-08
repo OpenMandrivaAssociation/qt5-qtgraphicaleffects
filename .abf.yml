@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   qtgraphicaleffects-opensource-src-5.9.2.tar.xz: 77f9b01fdb7bbee49103cd57a0cea3ca070b14f1
+sources:
+  qtgraphicaleffects-opensource-src-5.9.6.tar.xz: a62a693aaabc39c2d67cabcfa5a9a889add612ba
