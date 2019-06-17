@@ -1,11 +1,11 @@
 %define api %(echo %{version} |cut -d. -f1)
 %define major %api
-%define beta %{nil}
+%define beta rc3
 
 %define debug_package %nil
 
 Name:		qt5-qtgraphicaleffects
-Version:	5.12.3
+Version:	5.13.0
 %if "%{beta}" != ""
 Release:	0.%{beta}.1
 %define qttarballdir qtgraphicaleffects-everywhere-src-%{version}-%{beta}
