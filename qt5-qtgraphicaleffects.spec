@@ -2,8 +2,6 @@
 %define major %api
 %define beta %{nil}
 
-%define debug_package %nil
-
 Name:		qt5-qtgraphicaleffects
 Version:	5.15.3
 %if "%{beta}" != ""
