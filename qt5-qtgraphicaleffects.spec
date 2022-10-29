@@ -3,7 +3,7 @@
 %define beta %{nil}
 
 Name:		qt5-qtgraphicaleffects
-Version:	5.15.6
+Version:	5.15.7
 %if "%{beta}" != ""
 Release:	0.%{beta}.1
 %define qttarballdir qtgraphicaleffects-everywhere-src-%{version}-%{beta}
