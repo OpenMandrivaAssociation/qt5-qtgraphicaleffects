@@ -3,7 +3,7 @@
 %define beta %{nil}
 
 Name:		qt5-qtgraphicaleffects
-Version:	5.15.18
+Version:	5.15.19
 %if "%{beta}" != ""
 Release:	0.%{beta}.1
 %define qttarballdir qtgraphicaleffects-everywhere-src-%{version}-%{beta}
@@ -11,7 +11,7 @@ Source0:	http://download.qt.io/development_releases/qt/%(echo %{version}|cut -d.
 %else
 Release:	1
 %define qttarballdir qtgraphicaleffects-everywhere-opensource-src-%{version}
-Source0:	http://download.qt.io/official_releases/qt/%(echo %{version}|cut -d. -f1-2)/%{version}/submodules/%{qttarballdir}.tar.xz
+Source0:	http://download.qt.io/archive/qt/%(echo %{version}|cut -d. -f1-2)/%{version}/submodules/%{qttarballdir}.tar.xz
 %endif
 # From KDE
 # [currently no patches required]
@@ -28,6 +28,7 @@ BuildRequires:	pkgconfig(Qt5Qml) >= %{version}
 BuildRequires:	pkgconfig(Qt5Quick) >= %{version}
 BuildRequires:	pkgconfig(Qt5Test) >= %{version}
 BuildRequires:	qt5-qtqmlmodels-private-devel
+BuildRequires:	make
 # For the Provides: generator
 BuildRequires:	cmake >= 3.11.0-1
 
